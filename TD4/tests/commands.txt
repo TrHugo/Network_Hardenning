@@ -1,0 +1,19 @@
+# --- TD4 Audit and Hardening Commands ---
+
+# 1. OpenSSL Vulnerability Check (Before)
+openssl s_client -connect 10.10.20.10:443 -servername td4.local -tls1 </dev/null
+
+# 2. Curl Verbose Check
+curl -vk https://10.10.20.10/
+
+# 3. TestSSL Script (Before and After)
+./testssl.sh --fast --warnings batch https://10.10.20.10
+
+# 4. Request Filtering Test (WAF Edge Control)
+curl -k -H "User-Agent: BadBot/1.0" https://10.10.20.10/
+
+# 5. Rate Limiting Test (Spam API)
+for i in {1..30}; do curl -sk -o /dev/null -w "%{http_code}\n" https://10.10.20.10/api; done
+
+# 6. Extract Triage Logs from srv-web
+sudo grep "BadBot" /var/log/nginx/access.log

@@ -1,0 +1,26 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            4c:4d:a4:06:cb:69:94:09:b9:76:41:af:e0:4d:e1:59:f4:34:8e:86
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN = td4.local
+        Validity
+            Not Before: Mar 27 14:08:00 2026 GMT
+            Not After : Apr  3 14:08:00 2026 GMT
+        Subject: CN = td4.local
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:b2:3a:4f:c8:91:... (truncated for brevity)
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12
+            X509v3 Authority Key Identifier: 
+                keyid:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12
+            X509v3 Basic Constraints: critical
+                CA:FALSE
+    Signature Algorithm: sha256WithRSAEncryption
+         7a:8b:9c:0d:1e:2f:3a:... (truncated for brevity)
