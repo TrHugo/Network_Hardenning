@@ -1,0 +1,2 @@
+Selected Interface: ens6
+Reasoning: Due to AWS limitations on promiscuous mode between distinct instances, the IDS sensor was consolidated onto the gateway (`gw-fw`). `ens6` is the interface directly connected to the `10.10.20.0/24` (DMZ) subnet. Monitoring this interface ensures visibility into all traffic crossing the trust boundary to and from the target web server (`srv-web`).
