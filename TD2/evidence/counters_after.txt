@@ -1,0 +1,26 @@
+table inet filter {
+	chain forward {
+		type filter hook forward priority filter; policy drop;
+		ct state established,related counter packets 0 bytes 0 accept
+		ip saddr 10.10.10.0/24 ip daddr 10.10.20.10 tcp dport 80 counter packets 0 bytes 0 accept
+		ip saddr 10.10.10.0/24 ip daddr 10.10.20.10 tcp dport 443 counter packets 0 bytes 0 accept
+		ip saddr 10.10.10.0/24 ip daddr 10.10.20.10 tcp dport 22 counter packets 0 bytes 0 accept
+		ip saddr 10.10.10.0/24 ip daddr 10.10.20.0/24 icmp type echo-request limit rate 5/second counter packets 0 bytes 0 accept
+		counter packets 0 bytes 0 log prefix "NFT_FWD_DENY " limit rate 10/minute
+		ip saddr 10.10.10.0/24 ip daddr 10.10.20.0/24 icmp type echo-request limit rate 5/second counter packets 0 bytes 0 accept
+		counter packets 0 bytes 0 log prefix "NFT_FWD_DENY " limit rate 10/minute
+	}
+
+	chain input {
+		type filter hook input priority filter; policy drop;
+		iif "lo" counter packets 122 bytes 11667 accept
+		ct state established,related counter packets 243 bytes 27969 accept
+		tcp dport 22 counter packets 3 bytes 236 accept
+		counter packets 0 bytes 0 log prefix "NFT_IN_DENY " limit rate 10/minute
+		counter packets 0 bytes 0 log prefix "NFT_IN_DENY " limit rate 10/minute
+	}
+
+	chain output {
+		type filter hook output priority filter; policy accept;
+	}
+}
