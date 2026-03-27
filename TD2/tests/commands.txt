@@ -1,0 +1,17 @@
+# TD2 Verification Commands
+
+# 1. Positive Tests (Executed from gw-fw acting as LAN proxy)
+curl -sI http://10.10.20.10 | head -5
+ping -c 2 10.10.20.10
+
+# 2. Negative Tests (Executed from gw-fw directly - OUTPUT chain allowed)
+# Expected result: Connection refused
+nc -vz -w 3 10.10.20.10 12345
+nc -vz -w 3 10.10.20.10 3306
+nc -vz -w 3 10.10.20.10 23
+
+# 3. Negative Tests (Executed from srv-web towards LAN/WAN to trigger FORWARD DROP)
+# Expected result: Timeout / Log generation
+nc -vz -w 3 10.10.10.1 22
+nc -vz -w 3 8.8.8.8 80
+nc -vz -w 3 10.10.10.10 22

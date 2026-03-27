@@ -1,0 +1,10 @@
+# TD3 Trigger Commands
+
+# 1. Visibility Proof (Triggered from srv-web to target the gateway interface)
+ping -c 5 10.10.20.254
+
+# 2. Deterministic Trigger / Community Rules (Triggered from gw-fw)
+nmap -sS -sV -p 1-1000 10.10.20.10
+
+# 3. Custom Rule Trigger (Triggered from gw-fw to test sid:9000002)
+curl -s http://10.10.20.10/admin
