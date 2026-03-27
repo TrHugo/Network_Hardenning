@@ -1,0 +1,661 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       10.10.20.10           10.10.10.254          SSH      148    Server: Encrypted packet (len=76)
+
+Frame 1: 148 bytes on wire (1184 bits), 148 bytes captured (1184 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Transmission Control Protocol, Src Port: 22, Dst Port: 55000, Seq: 1, Ack: 1, Len: 76
+SSH Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000179       10.10.10.254          10.10.20.10           TCP      72     55000 → 22 [ACK] Seq=1 Ack=77 Win=607 Len=0 TSval=3303157346 TSecr=2766108828
+
+Frame 2: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 55000, Dst Port: 22, Seq: 1, Ack: 77, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.001973       10.10.20.10           10.10.10.254          SSH      204    Server: Encrypted packet (len=132)
+
+Frame 3: 204 bytes on wire (1632 bits), 204 bytes captured (1632 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Transmission Control Protocol, Src Port: 22, Dst Port: 55000, Seq: 77, Ack: 1, Len: 132
+SSH Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.002085       10.10.10.254          10.10.20.10           TCP      72     55000 → 22 [ACK] Seq=1 Ack=209 Win=607 Len=0 TSval=3303157348 TSecr=2766108830
+
+Frame 4: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 55000, Dst Port: 22, Seq: 1, Ack: 209, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 12.366458      10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 5: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 56103, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 12.366686      169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 6: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 56103
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 12.516585      10.10.10.254          10.10.20.10           TCP      80     35682 → 80 [SYN] Seq=0 Win=62727 Len=0 MSS=8961 SACK_PERM TSval=3303169862 TSecr=0 WS=128
+
+Frame 7: 80 bytes on wire (640 bits), 80 bytes captured (640 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 35682, Dst Port: 80, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 12.516612      10.10.20.10           10.10.10.254          TCP      80     80 → 35682 [SYN, ACK] Seq=0 Ack=1 Win=62643 Len=0 MSS=8961 SACK_PERM TSval=2766121344 TSecr=3303169862 WS=128
+
+Frame 8: 80 bytes on wire (640 bits), 80 bytes captured (640 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Transmission Control Protocol, Src Port: 80, Dst Port: 35682, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 12.516751      10.10.10.254          10.10.20.10           TCP      72     35682 → 80 [ACK] Seq=1 Ack=1 Win=62848 Len=0 TSval=3303169863 TSecr=2766121344
+
+Frame 9: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 35682, Dst Port: 80, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 12.516797      10.10.10.254          10.10.20.10           HTTP     147    GET / HTTP/1.1 
+
+Frame 10: 147 bytes on wire (1176 bits), 147 bytes captured (1176 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 35682, Dst Port: 80, Seq: 1, Ack: 1, Len: 75
+Hypertext Transfer Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 12.516804      10.10.20.10           10.10.10.254          TCP      72     80 → 35682 [ACK] Seq=1 Ack=76 Win=62592 Len=0 TSval=2766121345 TSecr=3303169863
+
+Frame 11: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Transmission Control Protocol, Src Port: 80, Dst Port: 35682, Seq: 1, Ack: 76, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 12.516986      10.10.20.10           10.10.10.254          HTTP     931    HTTP/1.1 200 OK  (text/html)
+
+Frame 12: 931 bytes on wire (7448 bits), 931 bytes captured (7448 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Transmission Control Protocol, Src Port: 80, Dst Port: 35682, Seq: 1, Ack: 76, Len: 859
+Hypertext Transfer Protocol
+Line-based text data: text/html (25 lines)
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 12.517086      10.10.10.254          10.10.20.10           TCP      72     35682 → 80 [ACK] Seq=76 Ack=860 Win=69376 Len=0 TSval=3303169863 TSecr=2766121345
+
+Frame 13: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 35682, Dst Port: 80, Seq: 76, Ack: 860, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 12.517217      10.10.10.254          10.10.20.10           TCP      72     35682 → 80 [FIN, ACK] Seq=76 Ack=860 Win=69376 Len=0 TSval=3303169863 TSecr=2766121345
+
+Frame 14: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 35682, Dst Port: 80, Seq: 76, Ack: 860, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 12.517242      10.10.20.10           10.10.10.254          TCP      72     80 → 35682 [FIN, ACK] Seq=860 Ack=77 Win=62592 Len=0 TSval=2766121345 TSecr=3303169863
+
+Frame 15: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Transmission Control Protocol, Src Port: 80, Dst Port: 35682, Seq: 860, Ack: 77, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 12.517329      10.10.10.254          10.10.20.10           TCP      72     35682 → 80 [ACK] Seq=77 Ack=861 Win=69376 Len=0 TSval=3303169863 TSecr=2766121345
+
+Frame 16: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 35682, Dst Port: 80, Seq: 77, Ack: 861, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 18.726034      10.10.10.254          10.10.20.10           TCP      80     53532 → 443 [SYN] Seq=0 Win=62727 Len=0 MSS=8961 SACK_PERM TSval=3303176072 TSecr=0 WS=128
+
+Frame 17: 80 bytes on wire (640 bits), 80 bytes captured (640 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 53532, Dst Port: 443, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 18.726055      10.10.20.10           10.10.10.254          TCP      60     443 → 53532 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+
+Frame 18: 60 bytes on wire (480 bits), 60 bytes captured (480 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Transmission Control Protocol, Src Port: 443, Dst Port: 53532, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 19.754251      06:bf:b0:d5:fe:6f                           ARP      48     Who has 10.10.20.10? Tell 10.10.20.1
+
+Frame 19: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 19.754279      06:f7:87:55:b1:93                           ARP      48     10.10.20.10 is at 06:f7:87:55:b1:93
+
+Frame 20: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 23.617607      10.10.10.254          10.10.20.10           ICMP     104    Echo (ping) request  id=0x0001, seq=1/256, ttl=64 (reply in 22)
+
+Frame 21: 104 bytes on wire (832 bits), 104 bytes captured (832 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 23.617633      10.10.20.10           10.10.10.254          ICMP     104    Echo (ping) reply    id=0x0001, seq=1/256, ttl=64 (request in 21)
+
+Frame 22: 104 bytes on wire (832 bits), 104 bytes captured (832 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 24.618702      10.10.10.254          10.10.20.10           ICMP     104    Echo (ping) request  id=0x0001, seq=2/512, ttl=64 (reply in 24)
+
+Frame 23: 104 bytes on wire (832 bits), 104 bytes captured (832 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 24.618726      10.10.20.10           10.10.10.254          ICMP     104    Echo (ping) reply    id=0x0001, seq=2/512, ttl=64 (request in 23)
+
+Frame 24: 104 bytes on wire (832 bits), 104 bytes captured (832 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 25.642699      10.10.10.254          10.10.20.10           ICMP     104    Echo (ping) request  id=0x0001, seq=3/768, ttl=64 (reply in 26)
+
+Frame 25: 104 bytes on wire (832 bits), 104 bytes captured (832 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 25.642721      10.10.20.10           10.10.10.254          ICMP     104    Echo (ping) reply    id=0x0001, seq=3/768, ttl=64 (request in 25)
+
+Frame 26: 104 bytes on wire (832 bits), 104 bytes captured (832 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 26.666802      10.10.10.254          10.10.20.10           ICMP     104    Echo (ping) request  id=0x0001, seq=4/1024, ttl=64 (reply in 28)
+
+Frame 27: 104 bytes on wire (832 bits), 104 bytes captured (832 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 26.666828      10.10.20.10           10.10.10.254          ICMP     104    Echo (ping) reply    id=0x0001, seq=4/1024, ttl=64 (request in 27)
+
+Frame 28: 104 bytes on wire (832 bits), 104 bytes captured (832 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Internet Control Message Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 28.618866      10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 29: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 48503, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 28.619083      169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 30: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 48503
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 30.091393      10.10.10.254          10.10.20.10           DNS      100    Standard query 0xbbea A example.com OPT
+
+Frame 31: 100 bytes on wire (800 bits), 100 bytes captured (800 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 39399, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 30.091431      10.10.20.10           10.10.10.254          ICMP     128    Destination unreachable (Port unreachable)
+
+Frame 32: 128 bytes on wire (1024 bits), 128 bytes captured (1024 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Internet Control Message Protocol
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 30.091715      10.10.10.254          10.10.20.10           DNS      100    Standard query 0xbbea A example.com OPT
+
+Frame 33: 100 bytes on wire (800 bits), 100 bytes captured (800 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 41637, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 30.091725      10.10.20.10           10.10.10.254          ICMP     128    Destination unreachable (Port unreachable)
+
+Frame 34: 128 bytes on wire (1024 bits), 128 bytes captured (1024 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Internet Control Message Protocol
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 30.091921      10.10.10.254          10.10.20.10           DNS      100    Standard query 0xbbea A example.com OPT
+
+Frame 35: 100 bytes on wire (800 bits), 100 bytes captured (800 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.10.254, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 46511, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 30.091926      10.10.20.10           10.10.10.254          ICMP     128    Destination unreachable (Port unreachable)
+
+Frame 36: 128 bytes on wire (1024 bits), 128 bytes captured (1024 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 10.10.10.254
+Internet Control Message Protocol
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 44.915284      10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 37: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 41388, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 44.915441      169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 38: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 41388
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 50.110689      06:f7:87:55:b1:93                           ARP      48     Who has 10.10.20.1? Tell 10.10.20.10
+
+Frame 39: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 50.110751      06:bf:b0:d5:fe:6f                           ARP      48     10.10.20.1 is at 06:bf:b0:d5:fe:6f
+
+Frame 40: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 61.040227      10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 41: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 35975, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 61.040443      169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 42: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 35975
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 77.226368      10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 43: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 44437, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 77.226587      169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 44: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 44437
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 81.194650      06:bf:b0:d5:fe:6f                           ARP      48     Who has 10.10.20.10? Tell 10.10.20.1
+
+Frame 45: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 81.194666      06:f7:87:55:b1:93                           ARP      48     10.10.20.10 is at 06:f7:87:55:b1:93
+
+Frame 46: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 82.366681      06:f7:87:55:b1:93                           ARP      48     Who has 10.10.20.1? Tell 10.10.20.10
+
+Frame 47: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 82.366728      06:bf:b0:d5:fe:6f                           ARP      48     10.10.20.1 is at 06:bf:b0:d5:fe:6f
+
+Frame 48: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 93.422479      10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 49: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 34517, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 93.422678      169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 50: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 34517
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 109.755045     10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 51: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 45290, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 109.755277     169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 52: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 45290
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 115.134685     06:f7:87:55:b1:93                           ARP      48     Who has 10.10.20.1? Tell 10.10.20.10
+
+Frame 53: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 115.134741     06:bf:b0:d5:fe:6f                           ARP      48     10.10.20.1 is at 06:bf:b0:d5:fe:6f
+
+Frame 54: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     55 126.070395     10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 55: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 40560, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 126.071453     169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 56: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 40560
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 142.155260     10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 57: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 40077, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 142.155445     169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 58: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 40077
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 142.635037     06:bf:b0:d5:fe:6f                           ARP      48     Who has 10.10.20.10? Tell 10.10.20.1
+
+Frame 59: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 142.635052     06:f7:87:55:b1:93                           ARP      48     10.10.20.10 is at 06:f7:87:55:b1:93
+
+Frame 60: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 147.390692     06:f7:87:55:b1:93                           ARP      48     Who has 10.10.20.1? Tell 10.10.20.10
+
+Frame 61: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 147.390737     06:bf:b0:d5:fe:6f                           ARP      48     10.10.20.1 is at 06:bf:b0:d5:fe:6f
+
+Frame 62: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 158.217895     10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 63: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 35327, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 158.218088     169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 64: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 35327
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 174.346901     10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 65: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 39879, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     66 174.347110     169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 66: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 39879
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     67 179.646680     06:f7:87:55:b1:93                           ARP      48     Who has 10.10.20.1? Tell 10.10.20.10
+
+Frame 67: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     68 179.646748     06:bf:b0:d5:fe:6f                           ARP      48     10.10.20.1 is at 06:bf:b0:d5:fe:6f
+
+Frame 68: 48 bytes on wire (384 bits), 48 bytes captured (384 bits)
+Linux cooked capture v2
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+     69 190.480841     10.10.20.10           169.254.169.123       NTP      96     NTP Version 4, client
+
+Frame 69: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.123
+User Datagram Protocol, Src Port: 36718, Dst Port: 123
+Network Time Protocol (NTP Version 4, client)
+
+No.     Time           Source                Destination           Protocol Length Info
+     70 190.481050     169.254.169.123       10.10.20.10           NTP      96     NTP Version 4, server
+
+Frame 70: 96 bytes on wire (768 bits), 96 bytes captured (768 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.123, Dst: 10.10.20.10
+User Datagram Protocol, Src Port: 123, Dst Port: 36718
+Network Time Protocol (NTP Version 4, server)
+
+No.     Time           Source                Destination           Protocol Length Info
+     71 191.594121     10.10.20.10           169.254.169.254       TCP      80     49654 → 80 [SYN] Seq=0 Win=62727 Len=0 MSS=8961 SACK_PERM TSval=1396571625 TSecr=0 WS=128
+
+Frame 71: 80 bytes on wire (640 bits), 80 bytes captured (640 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.254
+Transmission Control Protocol, Src Port: 49654, Dst Port: 80, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     72 191.594308     169.254.169.254       10.10.20.10           TCP      80     80 → 49654 [SYN, ACK] Seq=0 Ack=1 Win=63196 Len=0 MSS=9040 SACK_PERM TSval=4261952425 TSecr=1396571625 WS=128
+
+Frame 72: 80 bytes on wire (640 bits), 80 bytes captured (640 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 80, Dst Port: 49654, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     73 191.594328     10.10.20.10           169.254.169.254       TCP      72     49654 → 80 [ACK] Seq=1 Ack=1 Win=62848 Len=0 TSval=1396571625 TSecr=4261952425
+
+Frame 73: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.254
+Transmission Control Protocol, Src Port: 49654, Dst Port: 80, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     74 191.594436     10.10.20.10           169.254.169.254       HTTP     318    GET /latest/meta-data/iam/security-credentials/ HTTP/1.1 
+
+Frame 74: 318 bytes on wire (2544 bits), 318 bytes captured (2544 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.254
+Transmission Control Protocol, Src Port: 49654, Dst Port: 80, Seq: 1, Ack: 1, Len: 246
+Hypertext Transfer Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+     75 191.594512     169.254.169.254       10.10.20.10           TCP      72     80 → 49654 [ACK] Seq=1 Ack=247 Win=62976 Len=0 TSval=4261952426 TSecr=1396571625
+
+Frame 75: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 80, Dst Port: 49654, Seq: 1, Ack: 247, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     76 191.594842     169.254.169.254       10.10.20.10           HTTP/XML 599    HTTP/1.1 404 Not Found 
+
+Frame 76: 599 bytes on wire (4792 bits), 599 bytes captured (4792 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 80, Dst Port: 49654, Seq: 1, Ack: 247, Len: 527
+Hypertext Transfer Protocol
+eXtensible Markup Language
+
+No.     Time           Source                Destination           Protocol Length Info
+     77 191.594849     10.10.20.10           169.254.169.254       TCP      72     49654 → 80 [ACK] Seq=247 Ack=528 Win=62336 Len=0 TSval=1396571626 TSecr=4261952426
+
+Frame 77: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.254
+Transmission Control Protocol, Src Port: 49654, Dst Port: 80, Seq: 247, Ack: 528, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     78 191.594864     169.254.169.254       10.10.20.10           TCP      72     80 → 49654 [FIN, ACK] Seq=528 Ack=247 Win=62976 Len=0 TSval=4261952426 TSecr=1396571625
+
+Frame 78: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 80, Dst Port: 49654, Seq: 528, Ack: 247, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     79 191.594916     10.10.20.10           169.254.169.254       TCP      72     49654 → 80 [FIN, ACK] Seq=247 Ack=529 Win=62336 Len=0 TSval=1396571626 TSecr=4261952426
+
+Frame 79: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 10.10.20.10, Dst: 169.254.169.254
+Transmission Control Protocol, Src Port: 49654, Dst Port: 80, Seq: 247, Ack: 529, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     80 191.594976     169.254.169.254       10.10.20.10           TCP      72     80 → 49654 [ACK] Seq=529 Ack=248 Win=62976 Len=0 TSval=4261952426 TSecr=1396571626
+
+Frame 80: 72 bytes on wire (576 bits), 72 bytes captured (576 bits)
+Linux cooked capture v2
+Internet Protocol Version 4, Src: 169.254.169.254, Dst: 10.10.20.10
+Transmission Control Protocol, Src Port: 80, Dst Port: 49654, Seq: 529, Ack: 248, Len: 0

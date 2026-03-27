@@ -1,0 +1,7 @@
+ID,Source zone,Source asset,Destination zone,Destination asset,Proto,Port,Purpose,Owner,Status
+F01,LAN,client,DMZ,srv-web,TCP,22,remote admin during TD only,instructor,ALLOW — restrict by source IP
+F04,LAN,client,DMZ,srv-web,TCP,80,application test,app owner,ALLOW — prefer TLS
+F05,LAN,client,DMZ,srv-web,TCP,443,HTTPS — not yet configured,app owner,REVIEW
+F06,LAN,client,DMZ,srv-web,ICMP,-,connectivity check,lab,REVIEW
+F07,DMZ,srv-web,LAN,client,TCP,-,response traffic,auto,ALLOW (stateful)
+F08,any,any,any,any,any,any,default deny,security,DENY — log
