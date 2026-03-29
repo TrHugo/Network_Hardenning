@@ -1,0 +1,19 @@
+Status of IKE charon daemon (strongSwan 5.9.5, Linux 6.8.0-1050-aws, x86_64):
+  uptime: 7 minutes, since Mar 29 17:17:48 2026
+  malloc: sbrk 3067904, mmap 0, used 1255552, free 1812352
+  worker threads: 11 of 16 idle, 5/0/0/0 working, job queue: 0/0/0/0, scheduled: 2
+Listening IP addresses:
+  10.10.10.254
+  10.10.20.254
+Connections:
+lan-to-srvweb:  10.10.20.254...10.10.20.10  IKEv2
+lan-to-srvweb:   local:  [10.10.20.254] uses pre-shared key authentication
+lan-to-srvweb:   remote: [10.10.20.10] uses pre-shared key authentication
+lan-to-srvweb:   child:  10.10.10.0/24 === 10.10.20.10/32 TUNNEL
+Security Associations (1 up, 0 connecting):
+lan-to-srvweb[2]: ESTABLISHED 7 minutes ago, 10.10.20.254[10.10.20.254]...10.10.20.10[10.10.20.10]
+lan-to-srvweb[2]: IKEv2 SPIs: 71cd94391043833a_i 35eb6805635219e1_r*, pre-shared key reauthentication in 2 hours
+lan-to-srvweb[2]: IKE proposal: AES_CBC_256/HMAC_SHA2_256_128/PRF_HMAC_SHA2_256/MODP_2048
+lan-to-srvweb{1}:  INSTALLED, TUNNEL, reqid 1, ESP SPIs: c9565e0c_i cb24c615_o
+lan-to-srvweb{1}:  AES_CBC_256/HMAC_SHA2_256_128, 840 bytes_i (10 pkts, 3s ago), 840 bytes_o (10 pkts, 3s ago), rekeying in 35 minutes
+lan-to-srvweb{1}:   10.10.10.0/24 === 10.10.20.10/32

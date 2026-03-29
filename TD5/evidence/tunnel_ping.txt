@@ -1,0 +1,15 @@
+ubuntu@ip-10-10-10-254:~$ ping -I 10.10.10.254 10.10.20.10
+PING 10.10.20.10 (10.10.20.10) from 10.10.10.254 : 56(84) bytes of data.
+64 bytes from 10.10.20.10: icmp_seq=1 ttl=64 time=0.265 ms
+64 bytes from 10.10.20.10: icmp_seq=2 ttl=64 time=0.269 ms
+64 bytes from 10.10.20.10: icmp_seq=3 ttl=64 time=0.234 ms
+64 bytes from 10.10.20.10: icmp_seq=4 ttl=64 time=0.285 ms
+64 bytes from 10.10.20.10: icmp_seq=5 ttl=64 time=0.265 ms
+64 bytes from 10.10.20.10: icmp_seq=6 ttl=64 time=0.270 ms
+64 bytes from 10.10.20.10: icmp_seq=7 ttl=64 time=0.319 ms
+64 bytes from 10.10.20.10: icmp_seq=8 ttl=64 time=0.270 ms
+64 bytes from 10.10.20.10: icmp_seq=9 ttl=64 time=0.243 ms
+64 bytes from 10.10.20.10: icmp_seq=10 ttl=64 time=0.293 ms
+^C
+--- 10.10.20.10 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9218ms

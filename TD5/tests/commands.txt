@@ -1,0 +1,60 @@
+# Phase A: Routing, IP Forwarding & NAT
+# Enable IP forwarding on gateways
+sudo sysctl -w net.ipv4.ip_forward=1
+echo "net.ipv4.ip_forward=1" | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+
+# Persist nftables rules (NAT)
+sudo nft list ruleset | sudo tee /etc/nftables.conf
+sudo systemctl enable nftables
+
+# Add static routes for site-to-site communication
+# On siteA-gw
+sudo ip route add 10.10.20.0/24 via 10.10.99.2
+# On siteB-gw
+sudo ip route add 10.10.10.0/24 via 10.10.99.1
+
+# Phase B: SSH Hardening (on siteB-srv / client)
+# Create dedicated admin user on target server
+sudo useradd -m -s /bin/bash admin
+sudo passwd admin
+
+# Generate ED25519 SSH keys on client and copy to server
+ssh-keygen -t ed25519 -f ~/.ssh/id_td5 -C "admin@td5"
+ssh-copy-id -i ~/.ssh/id_td5.pub admin@10.10.20.10
+
+# Test initial SSH connection
+ssh -i ~/.ssh/id_td5 admin@10.10.20.10 whoami
+
+# Validate sshd_config and restart service (after editing /etc/ssh/sshd_config)
+sudo sshd -t && sudo systemctl restart ssh
+
+# Perform Positive & Negative SSH Tests
+ssh -i ~/.ssh/id_td5 admin@10.10.20.10 "echo SSH_KEY_OK"
+ssh -o PubkeyAuthentication=no admin@10.10.20.10
+ssh -i ~/.ssh/id_td5 root@10.10.20.10
+
+# Collect SSH audit logs
+sudo tail -n 50 /var/log/auth.log
+
+# Phase C: IPsec Site-to-Site VPN (StrongSwan)
+# Install strongSwan
+sudo apt update && sudo apt install -y strongswan strongswan-pki libcharon-extra-plugins
+sudo systemctl enable strongswan-starter
+
+# Restart IPsec daemon to apply /etc/ipsec.conf and /etc/ipsec.secrets
+sudo ipsec restart
+sleep 3
+sudo ipsec statusall
+
+# Traffic Generation & Verification
+# Force ping from the correct subnet to enter the tunnel
+ping -I 10.10.10.254 10.10.20.10
+
+# Verify traffic encryption (ESP packets) on the WAN interface
+sudo tcpdump -i ens6 -n host 10.10.20.10
+# OR
+sudo tcpdump -i ens6 -c 20 'udp port 500 or udp port 4500 or esp'
+
+# Check IPsec counters to validate encryption/decryption
+sudo ipsec statusall
