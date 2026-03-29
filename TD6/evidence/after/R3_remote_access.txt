@@ -1,0 +1,5 @@
+=== R3 Remote Access Regression ===
+P1: SSH key auth... PASS
+N1: SSH password denied... PASS
+P2: IPsec tunnel... PASS
+R3: All checks passed

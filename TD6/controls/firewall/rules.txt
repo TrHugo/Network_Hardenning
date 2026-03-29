@@ -1,0 +1,7 @@
+ubuntu@ip-10-10-10-254:~$ sudo nft list ruleset
+table ip nat {
+        chain postrouting {
+                type nat hook postrouting priority srcnat; policy accept;
+                oifname "ens5" masquerade
+        }
+}

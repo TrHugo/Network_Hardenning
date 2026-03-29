@@ -1,0 +1,6 @@
+=== R1 Firewall Regression ===
+P1: HTTPS -> srv-web... PASS
+P2: SSH -> srv-web... PASS
+N1: Port 12345 -> srv-web... PASS (blocked)
+N2: Port 3306 -> srv-web... PASS (blocked)
+R1: All checks passed

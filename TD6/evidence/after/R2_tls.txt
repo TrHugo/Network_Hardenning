@@ -1,0 +1,5 @@
+=== R2 TLS Regression ===
+P1: TLS 1.2 accepted... PASS
+N1: TLS 1.0 rejected... PASS
+P2: HSTS header present... PASS
+R2: All checks passed

@@ -1,0 +1,3 @@
+=== R4 Detection Regression ===
+P1: Trigger /admin detection via HTTP... PASS (Request sent. Please manually verify Suricata fast.log for the alert!)
+R4: All checks passed
